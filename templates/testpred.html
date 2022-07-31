@@ -1,0 +1,158 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test Case Prediction</title>
+
+
+    <!-- BootStrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+
+    <!-- css -->
+    <link rel="stylesheet" href="style_test.css">
+
+
+</head>
+
+<body>
+
+    <!-- As a heading -->
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="/">Test Case Prediction</a>
+            </div>
+        </div>
+    </nav>
+
+    <br><br><br>
+
+
+    <div class="container">
+
+
+
+        <form action="\predict" method="post">
+
+
+            <div class="row">
+                <div class="col-sm-6">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Project Size</h5>
+                            <!-- Departure -->
+                            <select name="Project_Size" id="Source" required="required">
+                                <option selected disabled>Choose an option</option>
+                                <option value="Small">Small</option>
+                                <option value="Medium">Medium</option>
+                                <option value="Large">Large</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <br>
+                <br>
+                <div class="col-sm-6">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Project Complexity</h5>
+                            <!-- Arrival -->
+                            <select name="Project_Complexity" id="Source" required="required">
+                                <option selected disabled>Choose an option</option>
+                                <option value="Small">Simple</option>
+                                <option value="Medium">Medium</option>
+                                <option value="High">Complex</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <br>
+            <br>
+            <br>
+
+            <div class="row">
+                <div class="col-sm-6">
+                    <div class="card">
+                        <div class="card-body">
+                            <!-- Source -->
+                            <h5 class="card-title">Requirements</h5>
+                              <input id="second" name="Requirements" required="required">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="card">
+                        <div class="card-body">
+                           <h5>Systems With Functional Change</h5>
+                             <input id="second" name="Systems_with_func_change" required="required">
+                            <!-- Destination -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <br>
+            <br>
+            <br>
+
+            <div class="row">
+                <div class="col-sm-6">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Systems With Config Change</h5>
+                            <!-- Total Stops -->
+                              <input id="second" name="Systems_with_config_change" required="required">
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Systems With No Change</h5>
+                            <!-- Airline -->
+                              <input id="second" name="Systems_with_no_change" required="required">
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <br>
+            <br>
+            <br>
+ 
+
+
+
+            <!-- Submit -->
+
+        <input type="submit" value="Total Test Cases" class="btn btn-secondary">
+
+
+        </form>
+
+        <br>
+        <br>
+        <br>
+        <h5>{{ prediction_text }}</h5
+     
+
+    </div>
+     <br>
+     <br>
+     <br>
+
+
+
+</body>
+
+</html>
